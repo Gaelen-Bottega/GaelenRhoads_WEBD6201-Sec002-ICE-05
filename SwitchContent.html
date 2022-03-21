@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<!-- Fig. 16.5: SwitchContent.html -->
-<!-- Asynchronously display content without reloading the page. -->
+<!-- Gaelen Rhoads ICE 5 -->
 <html>
 <head>
    <meta charset = "utf-8">
    <style type = "text/css">
+      .img {width: 200px; height: auto;}
       .box { border: 1px solid black; padding: 10px }
    </style>
    <title>Switch Content Asynchronously</title>
@@ -18,27 +18,27 @@
          var img;
          img = document.getElementById( "cpphtp" );
          img.addEventListener( "mouseover", 
-            function() { getContent( "cpphtp.html" ); }, false ); 
+            function() { getContent( "InfoFiles/cpphtp.html" ); }, false ); 
          img.addEventListener( "mouseout", clearContent, false ); 
          img = document.getElementById( "iw3htp" );
          img.addEventListener( "mouseover", 
-            function() { getContent( "iw3htp.html" ); }, false ); 
+            function() { getContent( "InfoFiles/iw3htp.html" ); }, false ); 
          img.addEventListener( "mouseout", clearContent, false ); 
          img = document.getElementById( "jhtp" );
          img.addEventListener( "mouseover", 
-            function() { getContent( "jhtp.html" ); }, false ); 
+            function() { getContent( "InfoFiles/jhtp.html" ); }, false ); 
          img.addEventListener( "mouseout", clearContent, false ); 
          img = document.getElementById( "vbhtp" );
          img.addEventListener( "mouseover", 
-            function() { getContent( "vbhtp.html" ); }, false ); 
+            function() { getContent( "InfoFiles/vbhtp.html" ); }, false ); 
          img.addEventListener( "mouseout", clearContent, false ); 
          img = document.getElementById( "vcshtp" );
          img.addEventListener( "mouseover", 
-            function() { getContent( "vcshtp.html" ); }, false );
+            function() { getContent( "InfoFiles/vcshtp.html" ); }, false );
          img.addEventListener( "mouseout", clearContent, false ); 
          img = document.getElementById( "javafp" );
          img.addEventListener( "mouseover", 
-            function() { getContent( "javafp.html" ); }, false ); 
+            function() { getContent( "InfoFiles/javafp.html" ); }, false ); 
          img.addEventListener( "mouseout", clearContent, false ); 
       } // end function registerListeners
 
@@ -82,19 +82,19 @@
    </script>
 </head>
 <body>
-   <h1>Mouse over a book for more information.</h1>
-   <img id = "cpphtp" alt = "C++ How to Program book cover"
-      src = "http://test.deitel.com/images/thumbs/cpphtp8.jpg">
-   <img id = "iw3htp" alt = "Internet & WWW How to Program book cover"
-      src = "http://test.deitel.com/images/thumbs/iw3htp5.jpg">
-   <img id = "jhtp" alt = "Java How to Program book cover"
-      src = "http://test.deitel.com/images/thumbs/jhtp9.jpg">
-   <img id = "vbhtp" alt = "Visual Basic 2010 How to Program book cover"
-      src = "http://test.deitel.com/images/thumbs/vb2010htp.jpg">
-   <img id = "vcshtp" alt = "Visual C# 2010 How to Program book cover" 
-      src = "http://test.deitel.com/images/thumbs/vcsharp2010htp.jpg">
-   <img id = "javafp" alt = "Java for Programmers book cover"
-      src = "http://test.deitel.com/images/thumbs/javafp.jpg">
+   <h1>Mouse over a player for more information.</h1>
+   <img id = "cpphtp" class="img" alt = "Cooper Kupp"
+      src = "images/thumbs/coop.jpg">
+   <img id = "iw3htp" class="img" alt = "Diontae Johnson"
+      src = "images/thumbs/diontae.jpg">
+   <img id = "jhtp" class="img" alt = "Julian Edelman"
+      src = "images/thumbs/julian.jpg">
+   <img id = "vbhtp" class="img" alt = "Russell Wilson"
+      src = "images/thumbs/russ.jpeg">
+   <img id = "vcshtp" class="img" alt = "Saquon Barkley" 
+      src = "images/thumbs/saquon.jpeg">
+   <img id = "javafp" class="img" alt = "Tom Brady"
+      src = "images/thumbs/tom.jpg">
    <div class = "box" id = "contentArea"></div>
 </body>
 </html>
